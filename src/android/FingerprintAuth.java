@@ -160,7 +160,7 @@ public class FingerprintAuth extends CordovaPlugin {
 	    if (args.length() >= 3) {
 		message = args.getString(2);
 	    }
-	    final String dialogTitle = null;
+	    String dialogTitle = null;
 	    if (args.length() >= 4) {
 		dialogTitle = args.getString(3);
 	    }
