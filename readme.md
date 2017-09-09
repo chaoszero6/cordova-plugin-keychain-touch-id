@@ -107,13 +107,13 @@ if (window.plugins) {
 if (window.plugins) {
     window.plugins.touchid.verify("MyKey", "My Message", function(password) {
         alert("Tocuh " + password);
-    });
+    }, "Dialog Title");
 }
 
 if (window.plugins) {
     window.plugins.touchid.save("MyKey", "My Password", function() {
         alert("Password saved");
-    });
+    }, "My Message", "Dialog Title");
 }
 
 if (window.plugins) {
