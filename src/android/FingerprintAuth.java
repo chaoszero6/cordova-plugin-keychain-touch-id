@@ -156,8 +156,8 @@ public class FingerprintAuth extends CordovaPlugin {
         if (action.equals("save")) {
             final String key = args.getString(0);
             final String password = args.getString(1);
-	    final String message = null;
-	    if (agrs.length() >= 3) {
+	    String message = null;
+	    if (args.length() >= 3) {
 		message = args.getString(2);
 	    }
 	    final String dialogTitle = null;
@@ -186,7 +186,7 @@ public class FingerprintAuth extends CordovaPlugin {
         } else if (action.equals("verify")) {
             final String key = args.getString(0);
             final String message = args.getString(1);
-	    final String dialogTitle = null;
+	    String dialogTitle = null;
 	    if (args.length() >= 3) {
 		dialogTitle = args.getString(2);
 	    }
