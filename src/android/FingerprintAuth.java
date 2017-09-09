@@ -174,7 +174,8 @@ public class FingerprintAuth extends CordovaPlugin {
                 }
                 mKeyID = key;
                 mToEncrypt = password;
-                showFingerprintDialog(Cipher.ENCRYPT_MODE,message, dialogTitle);
+		final String finalDialogTitle = dialogTitle;
+                showFingerprintDialog(Cipher.ENCRYPT_MODE,message, finalDialogTitle);
 
                 return true;
             } else {
@@ -196,7 +197,8 @@ public class FingerprintAuth extends CordovaPlugin {
 
                 if (secretKey != null) {
                     mKeyID = key;
-                    showFingerprintDialog(Cipher.DECRYPT_MODE,message, dialogTitle);
+		    final String finalDialogTitle = dialogTitle;
+                    showFingerprintDialog(Cipher.DECRYPT_MODE,message, finalDialogTitle);
                     mPluginResult.setKeepCallback(true);
                 } else {
                     mPluginResult = new PluginResult(PluginResult.Status.ERROR);
