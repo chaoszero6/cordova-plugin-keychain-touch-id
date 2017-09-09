@@ -11,8 +11,8 @@
       <engine name="cordova" version=">=3.0.0"/>
     </engines>
 
-    <repo>https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id.git</repo>
-    <issue>https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id/issues</issue>
+    <repo>https://github.com/chaoszero6/cordova-plugin-keychain-touch-id.git</repo>
+    <issue>https://github.com/chaoszero6/cordova-plugin-keychain-touch-id/issues</issue>
 	  <js-module src="www/touchid.js" name="TouchID">
         <clobbers target="window.plugins.touchid" />
     </js-module>
