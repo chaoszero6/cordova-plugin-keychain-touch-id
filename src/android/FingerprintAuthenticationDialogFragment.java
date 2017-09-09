@@ -78,12 +78,18 @@ public class FingerprintAuthenticationDialogFragment extends DialogFragment
         Bundle args = getArguments();
         int dialogMode = args.getInt("dialogMode");
         String message = args.getString("dialogMessage");
+        String dialogTitle = args.getString("dialogTitle");
         Log.d(TAG, "dialogMode: " + dialogMode);
 
         int fingerprint_auth_dialog_title_id = getResources()
                 .getIdentifier("fingerprint_auth_dialog_title", "string",
                         FingerprintAuth.packageName);
-        getDialog().setTitle(getString(fingerprint_auth_dialog_title_id));
+	if (dialogTitle != null) {
+		getDialog().setTitle(dialogTitle);
+	} else {
+		getDialog().setTitle(getString(fingerprint_auth_dialog_title_id));
+	}
+        
         int fingerprint_dialog_container_id = getResources()
                 .getIdentifier("fingerprint_dialog_container", "layout",
                         FingerprintAuth.packageName);
