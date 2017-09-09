@@ -405,7 +405,8 @@ public class FingerprintAuth extends CordovaPlugin {
                 Bundle bundle = new Bundle();
                 bundle.putInt("dialogMode", mode);
                 bundle.putString("dialogMessage",message);
-                bundle.putString("dialogTitle",dialogTitle);
+		if (dialogTitle != null)
+                	bundle.putString("dialogTitle",dialogTitle);
                 mFragment.setArguments(bundle);
                 mFragment.setmFingerPrintAuth(auth);
 
