@@ -6,18 +6,9 @@ A cordova plugin adding the iOS TouchID / Android fingerprint to your app and al
 
 ## Installation
 
-### Automatically (CLI / Plugman)
-Compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman), compatible with [PhoneGap 3.0 CLI](http://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html#The%20Command-line%20Interface_add_features), here's how it works with the CLI (backup your project first!):
-
-From npm:
-```
-$ cordova plugin add cordova-plugin-keychain-touch-id
-$ cordova prepare
-```
-
 The latest, from the master repo:
 ```
-$ cordova plugin add https://github.com/sjhoeksma/cordova-plugin-keychain-touch-id
+$ cordova plugin add https://github.com/chaoszero6/cordova-plugin-keychain-touch-id
 $ cordova prepare
 ```
 
